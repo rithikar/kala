@@ -11,6 +11,7 @@ Kala::Application.routes.draw do
   get "/static/gallery"
   get "/static/myblog"
   get "/static/home"
+  get "static/contactus"
   
 
   # Example of regular route:

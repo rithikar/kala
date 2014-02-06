@@ -9,28 +9,43 @@
     
   </head>
 
+
+<%= csrf_meta_tags %>
 <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
-    <%= csrf_meta_tags %>
+    <%= favicon_link_tag '/assets/v.jpg', :rel => 'shortcut icon' %>
+    
 
 
-  <body>
+<body>
     
       <h2></h2>
   
-<div id="nav">
-<p class="title"><a href="#">Kalakruthi<span class="subtitle"></a></p>
-<ul id="navigation">
- <li><a href="/static/home">Home</a></li>
- <li><a href="/static/myblog">My Blog</a></li>
- <li><a href="/static/gallery">Gallarey</a></li>
- <li><a href="/static/download">Downloads</a></li>
- <li><a href="/static/about">About</a></li>
-</ul>
-</div>
+  <div id="nav">
+    <p class="title"><a href="/static/home">Kalakruthi</a></p>
+        <ul id="navigation">
+          <li><a href="/static/home">Home</a></li>
+          <li><a href="/static/myblog">My Blog</a></li>
+          <li><a href="/static/gallery">Gallery</a></li>
+          <li><a href="/static/download">Downloads</a></li>
+          <li><a href="/static/about">About</a></li>
+          <li><a href="/static/contactus">Contact Us</a></li>
+        </ul>
+  </div>
 
     <%= yield %>
 
-    <%= javascript_include_tag "application" %>
-  </body>
+
+    
+  
+      <footer>
+         <div><hr style="border-color:#272727" size="1" width="85%">
+           <p align="center">
+               <font color="orange" size="4">&copy; Copyright Kalakruthi Arts Ltd. - 2014. All Rights Reserved</font>
+           </p>
+         </div>
+      </footer>
+
+            <%= javascript_include_tag "application" %>
+</body>
 </html>
